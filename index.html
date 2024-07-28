@@ -3,9 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>captured creation</title>
+    <link rel="stylesheet" href="design.css">
 </head>
-<body>
-    <h1>hello,i am suse linux.</h1>
+
+<body >
+    
+    <div class="container" id="blur">
+        <div class="bgimage"></div>
+        <div class="text-container">
+        <a href="index.html" class="home"> Home </a>
+        <a href="gallery.html" class="gallery"> Gallery </a>
+        <a href="#" onclick="toggle()" class="log"> Login </a>
+        <a href="#" onclick="toggle()" class="signup">Sign In</a>
+        <a href="aboutus.html" class="abtus">About Us </a>
+        <a href="contact.html" class="contact">Contact</a>
+        <a href="https://www.instagram.com/captured_creation2803/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" class="insta"></img></a>
+        </div>
+        <div class="main">
+        <h1>Captured Creation</h1></div>
+        <div class="detail"><br><br><i class="text">Hi! Welcome to my photography page where you will find natural and real world captured snaps.Photography is the art, 
+        application, and practice of creating images by recording light, 
+        either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film.
+        Capturing attention seekers is my leisure interest and i have loved photography since 2020.I am always excited to capture the unique,
+        alluring pictures of natural parts of this earth.
+        this page is all about my photography pictures including real world entities and creatures.<br>Thank You!!</i>
+        </div>
+    </div>
+    
+        <div id="popup">
+            <div class="name">Login</div>
+        <form action="login.php" target="_self">
+            <label class="username">User Name:<br>
+            <input class="firsttext" type="text" placeholder="enter username"/></label><br><br>
+            <label class="username">Password:<br>
+            <input class="firsttext" type="password" placeholder="enter password"/></label><br><br>
+            <input type="checkbox" checked="true">
+            <label class="rmmbr-me">Remember Me</label>Forgot Password?<br><br>
+            <input class="log_in" type="submit" value="Log In"/><br><br>
+            <div class="yet">haven't sign up yet?<a href="#" class="sign-up"> Sign Up</a></div><br><br>
+            <a href="#" onclick="toggle()" class="close">Close</a>  
+        </form>
+        </div>
+    <script type="text/javascript">
+        function toggle(){
+            var blur=document.getElementById('blur');
+            blur.classList.toggle('active');
+            var popup=document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+    </script>
+    <div id="pop">
+        <div class="name">Sign Up</div>
+    <form action="signup.php">
+        <label class="username1">First Name:<br>
+        <input class="firsttext1" type="text" placeholder="enter firstname"/></label><br><br>
+        <label class="username1">Last Name:<br>
+        <input class="firsttext1" type="text" placeholder="enter lastname"/></label><br><br>
+        <label class="username1">Email Id:<br>
+        <input class="firsttext1" type="text" placeholder="enter email id"/></label><br><br>
+        <label class="username1">New Password:<br>
+        <input class="firsttext1" type="password" placeholder="enter new password"/></label><br><br>
+        <label class="username1">Confirm Password:<br>
+        <input class="firsttext1" type="password" placeholder="enter confirm password"/></label><br><br>
+        <label class="yet">already a member?<a href="login.html">Log In</a></label>
+        <input class="log_in" type="submit" value="Sign In"/><br><br>
+        <a href="#" onclick="toggle()" class="close">Close</a>  
+    </form>
+    </div>
+<script type="text/javascript">
+    function toggle(){
+        var blur=document.getElementById('blur');
+        blur.classList.toggle('active');
+        var popup=document.getElementById('pop');
+        popup.classList.toggle('active');
+    }
+</script>
 </body>
 </html>
